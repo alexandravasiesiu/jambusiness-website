@@ -550,10 +550,6 @@ video {
   }
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -705,8 +701,8 @@ video {
   height: 1.5rem;
 }
 
-.h-96 {
-  height: 24rem;
+.h-80 {
+  height: 20rem;
 }
 
 .h-full {
@@ -1013,10 +1009,6 @@ video {
   line-height: 1.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1031,10 +1023,6 @@ video {
 
 .leading-8 {
   line-height: 2rem;
-}
-
-.leading-tight {
-  line-height: 1.25;
 }
 
 .text-body {

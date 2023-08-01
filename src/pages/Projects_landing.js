@@ -13,11 +13,22 @@ const meta = {
 };
 
 const posts = require.context('../content/Posts', true, /\.js$/);
-const allPostsList = posts.keys();
+
+const allPostsList = posts.keys().sort((a, b) => {
+  const postA = posts(a).options.order;
+  const postB = posts(b).options.order;
+  if (postA < postB) {
+    return -1;
+  }
+  if (postA > postB) {
+    return 1;
+  }
+  return 0;
+});
 
 export default function ProjectsLanding() {
   const [page, setPage] = React.useState(0);
-  const [postsPerPage, setPostsPerPage] = React.useState(3);
+  const [postsPerPage, setPostsPerPage] = React.useState(10);
   const initalPostsList = allPostsList.slice(0, postsPerPage);
   const [postsList, setPostsList] = React.useState(initalPostsList);
 

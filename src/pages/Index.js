@@ -4,6 +4,7 @@ import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import LabelSvg from '../components/svg/LabelSvg';
 import { useNavigate } from 'react-router-dom';
+import { ArrowDownSolid } from '../components/svg/ArrowDownSolid';
 
 const meta = {
   title: '',
@@ -85,7 +86,8 @@ export default function Index() {
             <div class="w-full px-4 mb-6">
               <div class="p-8 bg-white rounded mx-auto w-full lg:w-2/3">
                 <div class="flex items-center justify-center w-16 h-16 mb-2 bg-gray-500 rounded-full">
-                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fbbf24" viewbox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"></path></svg></div>
+                  <ArrowDownSolid />
+                </div>
                 <h3 class="font-heading text-lg font-medium mb-4">Realizări remarcabile în proiecte de ocupare și formare:</h3>
                 <p class="leading-7">Am obținut rezultate remarcabile în cadrul programului POSDRU, AP 5 "Promovarea măsurilor active de ocupare". Am dezvoltat și implementat cu succes măsuri active de ocupare, contribuind la integrarea durabilă a persoanelor în piața muncii și facilitând accesul acestora la oportunități de angajare și dezvoltare profesională.</p>
               </div>
@@ -93,7 +95,8 @@ export default function Index() {
             <div class="w-full px-4 mb-6">
               <div class="p-8 bg-white rounded mx-auto w-full lg:w-2/3">
                 <div class="flex items-center justify-center w-16 h-16 mb-2 bg-gray-500 rounded-full">
-                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fbbf24" viewbox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"></path></svg></div>
+                <ArrowDownSolid />
+                </div>
                 <h3 class="font-heading text-lg font-medium mb-4">Proiect de dezvoltare antreprenorială:</h3>
                 <p class="leading-7">Proiect de succes: "Construim antreprenori responsabili pentru o dezvoltare durabilă!" În parteneriat și implementat în perioada ianuarie 2018 - februarie 2021, proiectul  a reprezentat un succes remarcabil. Am furnizat cursuri de formare antreprenorială pentru 320 de persoane din Regiunea Centru, iar în urma competiției planurilor de afaceri, am selectat și finanțat 80 de participanți. Acest proiect a contribuit la dezvoltarea unor antreprenori responsabili și la stimularea unei dezvoltări durabile în comunitate.</p>
               </div>
@@ -101,7 +104,8 @@ export default function Index() {
             <div class="w-full px-4 mb-12">
               <div class="p-8 bg-white rounded mx-auto lg:w-2/3 w-full">
                 <div class="flex items-center justify-center w-16 h-16 mb-2 rounded-full bg-gray-500">
-                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fbbf24" viewbox="0 0 16 10"><path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"></path></svg></div>
+                <ArrowDownSolid />
+                </div>
                 <h3 class="font-heading text-lg font-medium mb-4">Inițiative pentru tinerii NEETs:</h3>
                 <p class="leading-7">Proiectul "Creșterea ocupării, precum și îmbunătățirea nivelului de competențe al tinerilor NEETs" se axează pe creșterea ocupării și dezvoltarea competențelor tinerilor șomeri NEETs, cu vârste cuprinse între 16 și 29 de ani, înregistrați la Serviciul Public de Ocupare din regiunea Centru. Prin intermediul acestui proiect, se oferă cursuri de formare în diverse domenii, precum cele de dezvoltare a competențelor antreprenoriale, lucrător în structuri pentru construcții, pavator, patiser, gestiunea deșeurilor și lucrător comercial, adresate unui număr de 380 de participanți. De asemenea, se intenționează facilitarea medierii pe piața muncii și finanțarea a 16 planuri de afaceri promițătoare. Obiectivul nostru este să contribuim la crearea unui viitor mai bun pentru tinerii NEETs, oferindu-le competențele și oportunitățile necesare pentru a se integra pe piața muncii și pentru a-și dezvolta carierele în mod durabil.</p>
                 <a class="flex items-center text-yellow-400 mt-2 font-medium hover:underline bg-gray-800 rounded-sm text-lg py-2 px-2"

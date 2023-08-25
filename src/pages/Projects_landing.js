@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { ProjectNavigation } from '../components/ProjectNavigation';
-import ProjectPostWrapper from '../components/ProjectPostWrapper';
-import ProjectFooter from '../components/ProjectFooter';
+import  ProjectPostWrapper  from '../components/ProjectPostWrapper';
+import  ProjectFooter  from '../components/ProjectFooter';
 
 const meta = {
   title: '',
@@ -15,13 +15,13 @@ const meta = {
 const posts = require.context('../content/Posts', true, /\.js$/);
 
 const allPostsList = posts.keys().sort((a, b) => {
-  const postA = posts(a).options.order;
-  const postB = posts(b).options.order;
+  const postA = posts(a).options.id;
+  const postB = posts(b).options.id;
   if (postA < postB) {
-    return -1;
+    return 1;
   }
   if (postA > postB) {
-    return 1;
+    return -1;
   }
   return 0;
 });
@@ -58,7 +58,7 @@ export default function ProjectsLanding() {
               })}
             </div >
 
-            <div class="flex">
+            <div class="flex justify-center py-5">
 
               <button id="previous-btn" class="flex items-center justify-center px-3 h-8 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 onClick={() => {

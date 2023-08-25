@@ -13,6 +13,7 @@ import ProjectsProgressPage from './pages/Projects_progress.js';
 import ProjectsEvaluationPage from './pages/Projects_evaluation.js';
 import ProjectsBusinessPage from './pages/Projects_business.js';
 import ProjectsLanding from './pages/Projects_landing.js';
+import ProjectsMedia from './pages/Projects_media.js';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/projectsevaluation" element={<ProjectsEvaluationPage />} />
       <Route path="/projectsbusiness" element={<ProjectsBusinessPage />} />
       <Route path="/projectslanding" element={<ProjectsLanding />} />
+      <Route path="/projectsmedia" element={<ProjectsMedia />} />
     </Routes>
   );
 }

@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer';
 import LabelSvg from '../components/svg/LabelSvg';
 import { useNavigate } from 'react-router-dom';
 import { ArrowDownSolid } from '../components/svg/ArrowDownSolid';
+import CookieBanner from '../components/CookieBanner';
 
 const meta = {
   title: '',
@@ -23,6 +24,7 @@ export default function Index() {
         <Helmet {...meta}></Helmet>
       </HelmetProvider>
       <>
+        {localStorage.getItem('cookie_consent')  ? null : <CookieBanner /> }
         <Navigation />
 
         <div class="flex justify-center py-10">

@@ -874,6 +874,11 @@ video {
   max-width: 48rem;
 }
 
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: max-content;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -973,6 +978,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-auto {
@@ -1137,6 +1146,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-16 {

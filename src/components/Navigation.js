@@ -1,5 +1,5 @@
 import logo from '../assets/images/logo-jam.png';
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 export function Navigation() {
@@ -10,14 +10,15 @@ export function Navigation() {
 		<section class="bg-gray-50"><nav class="py-4 bg-white"><div class="container mx-auto px-4">
 			<div class="relative flex justify-between items-center">
 				<div class="w-auto">
-					<a class="inline-block" href="#" onClick={() => { navigate('/') }}>
-						<img src={logo} alt="" class="h-20" /></a>
+					<Link class="inline-block" href="#" to='/'>
+						<img src={logo} alt="" class="h-20" /></Link>
 				</div>
 				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">
-					<ul class="flex items-center"><li class="font-heading mr-12 text-base"><a class="hover:text-black" href="#about">Despre</a></li>
-						<li class="font-heading mr-12 text-base"><a class="hover:text-black" href="#experience">Experiență</a></li>
-						<li class="font-heading mr-12 text-base"><a class="hover:text-black" href="#projects">Proiecte</a></li>
-						<li class="font-heading mr-12 text-base"><a class="hover:text-black" href="#contact">Contact</a></li>
+					<ul class="flex items-center">
+						<li class="font-heading mr-12 text-base"><Link class="hover:text-black" to="#about">Despre</Link></li>
+						<li class="font-heading mr-12 text-base"><Link class="hover:text-black" to="#experience">Experiență</Link></li>
+						<li class="font-heading mr-12 text-base"><Link class="hover:text-black" to="#projects">Proiecte</Link></li>
+						<li class="font-heading mr-12 text-base"><Link class="hover:text-black" to="#contact">Contact</Link></li>
 					</ul></div>
 				<div class="w-auto hidden lg:block">
 					<a class="inline-block py-4 px-8 font-heading font-medium text-base text-white border rounded-sm transition duration-200 bg-red-500 border-red-500 hover:border-red-600 hover:bg-red-600" href="#contact">Contact</a>
@@ -53,13 +54,13 @@ export function Navigation() {
 				<div class="navbar-backdrop fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80"></div>
 				<nav class="relative pt-7 pb-8 bg-white h-full overflow-y-auto"><div class="flex flex-col px-6 h-full">
 				<div className='flex justify-between'>
-						<a className='inline-block ml-4 mb-7' href="#" onClick={() => { navigate('/') }}>
+						<Link className='inline-block ml-4 mb-7' to='/'>
 							<img
 								src={logo}
 								alt=''
 								className='h-20'
 							/>
-						</a>
+						</Link>
 						<a className='inline-block ml-4 mb-7' onClick={()=>setMenuOpen(false)}>
 							<svg 
 							xmlns="http://www.w3.org/2000/svg" 
@@ -77,10 +78,10 @@ export function Navigation() {
                         </a>
 						</div>
 					<ul class="w-full mb-auto pb-16">
-						<li><a class="font-heading block text-base py-4 px-6 rounded-sm" href="#about">Despre</a></li>
-						<li><a class="font-heading block text-base py-4 px-6 rounded-sm" href="#experience">Experiență</a></li>
-						<li><a class="font-heading block text-base py-4 px-6 rounded-sm" href="#projects">Proiecte</a></li>
-						<li><a class="font-heading block text-base py-4 px-6 rounded-sm" href="#contact">Contact</a></li>
+						<li><Link class="font-heading block text-base py-4 px-6 rounded-sm" to="#about">Despre</Link></li>
+						<li><Link class="font-heading block text-base py-4 px-6 rounded-sm" to="#experience">Experiență</Link></li>
+						<li><Link class="font-heading block text-base py-4 px-6 rounded-sm" to="#projects">Proiecte</Link></li>
+						<li><Link class="font-heading block text-base py-4 px-6 rounded-sm" to="#contact">Contact</Link></li>
 					</ul><div class="w-full">
 						<p class="pl-2 text-sm">2023 © Jam Business</p>
 					</div>

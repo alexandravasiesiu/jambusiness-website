@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function CookieBanner() {
@@ -26,7 +26,7 @@ return (
               optimă a platformei și pentru a analiza modul în care
               interacționați cu conținutul nostru.
             </p>
-            <a class="flex items-center text-coolGray-500 mt-2 font-medium hover:text-red-500 hover:underline" onClick={() => {navigate('/projectspolicy')}}>
+            <Link class="flex items-center text-coolGray-500 mt-2 font-medium hover:text-red-500 hover:underline" to='/projectspolicy'>
               <span class="mr-2 font-heading">
                 Citiți politica noastră de confidențialitate
               </span> 
@@ -42,7 +42,7 @@ return (
                   fill="currentColor"
                 ></path>
               </svg>
-            </a>
+            </Link>
         </div>
         <div class="xl:w-1/3 w-full flex items-center font-medium xl:justify-end justify-start gap-5">
             <button 

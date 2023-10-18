@@ -2,6 +2,7 @@ import ssTransparent from '../assets/images/ss-transparent.png';
 import logo from '../assets/images/logo-jam.png';
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ProjectFooter() {
 	const navigate = useNavigate();
@@ -20,15 +21,15 @@ export default function ProjectFooter() {
 				</div>
 				<div class="xl:w-auto xl:mr-20 px-4 lg:mb-0 hidden lg:block mt-2">
 					<ul class="flex gap-5">
-						<li class="mb-2"><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectslanding') }}>Prima pagină</a></li>
-						<li class="mb-2"><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsacquisitions') }}>Achiziții</a></li>
-						<li class="mb-2"><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsbusiness') }}>Afaceri</a></li>
-						<li class="mb-2"><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsabout') }}>Despre</a></li>
-						<li><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsevaluation') }}>Evaluare</a></li>
-						<li><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsprogress') }}>Progres</a></li>
-						<li><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsdocuments') }}>Documente</a></li>
-						<li><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectsmedia') }}>Media</a></li>
-						<li><a class="font-heading text-white hover:text-gray-100" onClick={() => { navigate('/projectscontact') }}>Contact</a></li>
+						<li class="mb-2"><Link class="font-heading text-white hover:text-gray-100" to='/projectslanding'>Prima pagină</Link></li>
+						<li class="mb-2"><Link class="font-heading text-white hover:text-gray-100" to='/projectsacquisitions'>Achiziții</Link></li>
+						<li class="mb-2"><Link class="font-heading text-white hover:text-gray-100" to='/projectsbusiness'>Afaceri</Link></li>
+						<li class="mb-2"><Link class="font-heading text-white hover:text-gray-100" to='/projectsabout'>Despre</Link></li>
+						<li><Link class="font-heading text-white hover:text-gray-100" to='/projectsevaluation'>Evaluare</Link></li>
+						<li><Link class="font-heading text-white hover:text-gray-100" to='/projectsprogress'>Progres</Link></li>
+						<li><Link class="font-heading text-white hover:text-gray-100" to='/projectsdocuments'>Documente</Link></li>
+						<li><Link class="font-heading text-white hover:text-gray-100" to='/projectsmedia'>Media</Link></li>
+						<li><Link class="font-heading text-white hover:text-gray-100" to='/projectscontact'>Contact</Link></li>
 					</ul><span class="block text-gray-300 mb-6 mt-2">2023 © Jam Business</span>
 				</div>
 				<div className='w-auto lg:hidden'>
@@ -61,13 +62,13 @@ export default function ProjectFooter() {
 				<nav className='relative pt-7 pb-8 bg-white h-full overflow-y-auto'>
 					<div className='flex flex-col px-6 h-full'>
 						<div className='flex justify-between'>
-						<a className='inline-block ml-4 mb-7' onClick={() => { navigate('/') }}>
+						<Link className='inline-block ml-4 mb-7' to='/'>
 							<img
 								src={logo}
 								alt=''
 								className='h-20'
 							/>
-						</a>
+						</Link>
 						<a className='inline-block ml-4 mb-7' onClick={()=>setMenuOpen(false)}>
 							<svg 
 							xmlns="http://www.w3.org/2000/svg" 
@@ -86,84 +87,84 @@ export default function ProjectFooter() {
 						</div>
 						<ul className='w-full mb-auto pb-16'>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base font-medium py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/') }}
+									to='/'
 								>
 									Acasă
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectslanding') }}
+									to='/projectslanding'
 								>
 									Prima pagină
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsacquisitions') }}
+									to='/projectsacquisitions'
 								>
 									Achiziții
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsbusiness') }}
+									to='/projectsbusiness'
 								>
 									Afaceri
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsabout') }}
+									to='/projectsabout'
 								>
 									Despre
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsevaluation') }}
+									to='/projectsevaluation'
 								>
 									Evaluare
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsprogress') }}
+									to='/projectsprogress'
 								>
 									Progres
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsdocuments') }}
+									to='/projectsdocuments'
 								>
 									Documente
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectsmedia') }}
+									to='/projectsmedia'
 								>
 									Media
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className='font-heading block text-base py-4 px-6 rounded-sm'
-									onClick={() => { navigate('/projectscontact') }}
+									to='/projectscontact'
 								>
 									Contact
-								</a>
+								</Link>
 							</li>
 						</ul>
 						<div className='w-full ml-4'>

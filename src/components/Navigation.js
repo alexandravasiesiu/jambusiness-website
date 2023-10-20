@@ -21,7 +21,7 @@ export function Navigation() {
 						<li class="font-heading mr-12 text-base"><Link class="hover:text-black" to="#contact">Contact</Link></li>
 					</ul></div>
 				<div class="w-auto hidden lg:block">
-					<a class="inline-block py-4 px-8 font-heading font-medium text-base text-white border rounded-sm transition duration-200 bg-red-500 border-red-500 hover:border-red-600 hover:bg-red-600" href="#contact">Contact</a>
+					<Link class="inline-block py-4 px-8 font-heading font-medium text-base text-white border rounded-sm transition duration-200 bg-red-500 border-red-500 hover:border-red-600 hover:bg-red-600" to="#contact">Contact</Link>
 				</div>
 				<div className='w-auto lg:hidden'>
 							<a

@@ -1,4 +1,3 @@
-
 export const options = {
 	"title": "NOVAFIN STAR SRL și-a deschis porțile",
 	"category": "AFACERI",

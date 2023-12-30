@@ -10,7 +10,7 @@ export function Navigation() {
 		<section class="bg-gray-50"><nav class="py-4 bg-white"><div class="container mx-auto px-4">
 			<div class="relative flex justify-between items-center">
 				<div class="w-auto">
-					<Link class="inline-block" href="#" to='/'>
+					<Link class="inline-block" to='/'>
 						<img src={logo} alt="" class="h-20" /></Link>
 				</div>
 				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">

@@ -23,7 +23,7 @@ export default function Post() {
           href="https://www.marinex-constructii.ro/proiect/154155/wp-content/uploads/sites/2/2023/10/7.-A4_iul.23_Lista-dosare-selectate-publicata.pdf"
           class="items-center text-lg underline hover:text-red-500"
         >
-          A4_iun.23_Lista-dosare-selectate-publicata
+          A4_iul.23_Lista-dosare-selectate-publicata
         </a>
       </div>
     </>

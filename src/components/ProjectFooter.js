@@ -35,7 +35,6 @@ export default function ProjectFooter() {
 				<div className='w-auto lg:hidden'>
 							<a
 								className='navbar-burger inline-flex w-14 h-14 justify-center items-center bg-gray-50 hover:bg-gray-100 rounded-full'
-								href='#'
 								onClick={()=>setMenuOpen(true)}
 							>
 								<svg
